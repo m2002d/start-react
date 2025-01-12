@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --font-family: "Montserrat", serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --first-clr: #1ABC9C;
+  --sec-clr: #2C3E50;
+
+  --color: rgba(255, 255, 255, 0.87);
+  --background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+.secColor{
+  background-color: var(--sec-clr);
+}
+/**--**--******** Navbar ********--**--**/
+header{
+  background-color: var(--sec-clr);
+}
+header .navbar-toggler{
+  background-color: var(--first-clr);
+  color: #fff;
+}
+header a,
+header .navbar-toggler-icon{
+  color: #fff !important;
+}
+header .navbar .nav-link.active{
+  background-color: var(--first-clr);
+  border-radius: 7px;
+}
+header .navbar .nav-link{
+  transition: .6s;
+}
+header .navbar .nav-link:hover{
+  color: #21fcd1 !important;
+}
+
+
+/**--**--******** Home ********--**--**/
+.home{
+  background-color: var(--first-clr);
+  height: 90vh;
+  text-align: center;
+  position: relative;
+}
+.home figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+/**--**--******** Portfolio ********--**--**/
+.portfolio .trigger-modal{
+  cursor: pointer;
+}
+.portfolio .trigger-modal .overflow{
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s;
+  background-color: #1abc9c99;
+}
+.portfolio .trigger-modal:hover .overflow{
+  opacity: 1;
+}
+
+/**--**--******** About ********--**--**/
+.about{
+  background-color: var(--first-clr);
+}
+
+/**--**--******** Contact ********--**--**/
+.contact .form input,
+.contact .form textarea{
+  font-weight: 600;
+  caret-color: var(--first-clr);
+}
+.contact .form input::placeholder,
+.contact .form textarea::placeholder{
+  color: #5d6770;
+}
+.contact .form textarea{
+  max-height: 150px;
+  min-height: 100px;
+}
+.contact .form .btn{
+  background-color: var(--first-clr);
+  transition: .5s;
+  
+}
+.contact .form .btn:hover{
+  background-color: #18AD90;
+}
+
+/**--**--******** Footer ********--**--**/
+footer ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: .0625rem solid #fff;
+  border-radius: 50%;
+  transition: all .5s;
+}
+footer ul li a{
+  color: #fff;
+}
+footer ul li:hover{
+  background-color: #fff;
+} 
+footer ul li:hover a{
+  color: #000;
+}
+
+footer .copyRight{
+  background-color: #1A252F;
+}
